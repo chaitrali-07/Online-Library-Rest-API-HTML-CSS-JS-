@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>
+      <img src="library logo.jpg" alt="logo" style="height: 50px; vertical-align: middle;">
+      Virtual Library
+    </h1>
+    <p>"A room without books is like a body without a soul."</p>
+  </header>
+
+  <main class="container">
+
+    <h2 class="section-title">Books  Arranged By Geners</h2>
+    <div id="bookGenres"></div>
+
+    <div id="message" class="message"></div>
+
+    <!-- Add Book Form -->
+    <form id="addBookForm" class="card add-book-form">
+      <h2>Add a New Book</h2>
+      <div class="form-row">
+        <input type="text" id="bkname" placeholder="Book Title" required />
+        <input type="text" id="bkauth" placeholder="Author" required />
+      </div>
+      <div class="form-row">
+        <input type="text" id="genreInput" placeholder="Genre" required />
+        <input type="number" id="quantity" placeholder="Quantity" required />
+      </div>
+      <label>
+        <input type="checkbox" id="available" checked /> Available
+      </label>
+      <button type="submit">Add Book</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Virtual Library. All rights reserved.</p>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
